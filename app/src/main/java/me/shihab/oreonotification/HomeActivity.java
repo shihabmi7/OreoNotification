@@ -40,10 +40,9 @@ public class HomeActivity extends AppCompatActivity {
                     NotificationChannel(CHANNEL_ID, CHANNEL_NAME, NotificationManager.IMPORTANCE_HIGH);
             notificationChannel.setDescription("Game related notifications shows in this channel");
             notificationChannel.enableVibration(true);
-            notificationChannel.enableLights(true);
-            notificationChannel.setLightColor(Color.RED);
-            notificationChannel.enableVibration(true);
             notificationChannel.setVibrationPattern(new long[]{100, 200, 300, 400, 500, 400, 300, 200, 400});
+            notificationChannel.enableLights(true);
+            notificationChannel.setLightColor(Color.GREEN);
 
         }
 
